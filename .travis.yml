@@ -1,0 +1,4 @@
+language: python
+install:
+- apt-get install python3.6
+- apt-get install pip
