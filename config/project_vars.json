@@ -1,0 +1,12 @@
+{
+    "AUTHOR_MAIL": "andreu@hoberlab.com",
+    "AUTHOR_NAME": "Andreu Mora",
+    "DESCRIPTION": "Interactive scientific reports",
+    "PROJECT_DIR": "/Users/andreu/Documents/Projects/repplot/",
+    "PROJECT_NAME": "repplot",
+    "CHECK_VIRTUALENV": "Yes",
+    "PYTHONPATH_LIST": [
+        "/Users/andreu/Documents/Projects/repplot/src"
+    ],
+    "PYTHON_VER": "3.6"
+}

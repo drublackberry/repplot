@@ -1,0 +1,8 @@
+pandas
+matplotlib
+bokeh==0.12.10
+holoviews==1.9.1
+flask==0.11.1
+jupyterlab
+statsmodels==0.8.0
+

@@ -1,0 +1,44 @@
+# Default extensions that will not be put on git
+# Packages
+*.zip
+*.7z
+*.rar
+*.iso
+*.tar
+*.gz
+
+# Logs and databases
+*.log
+*.sqlite
+*.sql.data
+*.pickle
+*.db
+*.bak
+
+# OS files
+*.DS_Store
+*.DS_Store?
+Thumbs.db
+
+# Backup files from editors
+*.pyc
+*.save
+*~
+*.swp
+.ipynb_checkpoints
+Untitled*.ipynb
+
+# Excel files
+*.xlsx
+*.xls
+
+# Images from reports
+*.png
+*.jpg
+
+# Text files and csv files
+*.csv
+*.dat
+
+# secrets file, uncommnent if repo is pulic
+#secrets.json
