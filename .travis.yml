@@ -2,4 +2,4 @@ language: python
 python: "3.6"
 install: pip install -r config/requirements.txt
 env: PYTHONPATH=src/
-script: python test/test_ci.py
+script: python test/utils_ut.py
