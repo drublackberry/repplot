@@ -17,11 +17,7 @@ def check_type(func):
 
 
 if __name__ == '__main__':
-    df = pd.DataFrame(columns=['bacon', 'spam', 'beans', 'ham'],
-                      index=pd.date_range(start='2015-01-01', end='2018-01-01'))
-    t = np.array(range(len(df)))
-    for c in df.columns:
-        df.loc[:, c] = np.random.random(1) * np.sin(2 * np.pi * t / len(df)) + np.random.random(len(df))
+    df = rep.generate_dummy_data()
 
     @check_type
     def test_plot_cat():

@@ -11,6 +11,18 @@ from bokeh.layouts import row, column
 hv.Store.current_backend = 'bokeh'
 
 
+def generate_dummy_data():
+    """
+    Generates dummy data in pivot format to be used for testing and demoing
+    """
+    df = pd.DataFrame(columns=['bacon', 'spam', 'beans', 'ham'],
+                      index=pd.date_range(start='2015-01-01', end='2018-01-01'))
+    t = np.array(range(len(df)))
+    for c in df.columns:
+        df.loc[:, c] = np.random.random(1) * np.sin(2 * np.pi * t / len(df)) + np.random.random(len(df))
+    return df
+
+
 def plot_cat(df_in, smooth_period=1, plot_std=False, title='', plot_original=True, linestyle='-', marker='+', ax=None, show_weekday_on=None):
     """
     Plots a df categorized

@@ -6,15 +6,6 @@ from wgutils import tracelog
 import time
 
 
-def generate_dummy_data():
-    df = pd.DataFrame(columns=['bacon', 'spam', 'beans', 'ham'],
-                      index=pd.date_range(start='2015-01-01', end='2018-01-01'))
-    t = np.array(range(len(df)))
-    for c in df.columns:
-        df.loc[:, c] = np.random.random(1) * np.sin(2 * np.pi * t / len(df)) + np.random.random(len(df))
-    return df
-
-
 def check_type(func):
     def func_wrapper(*args, **kargs):
         tracelog("{} START".format(func.__name__))
@@ -26,7 +17,7 @@ def check_type(func):
     return func_wrapper
 
 
-df = generate_dummy_data()
+df = rep.generate_dummy_data()
 
 
 class TestUtils(unittest.TestCase):
