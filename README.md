@@ -9,10 +9,17 @@ structures and runs over matplotlib (static) or Bokeh (interactive).
 
 It all started based on this [post](http://www.hoberlab.com/2017/11/16/visualizing-things-with-bokeh/).
 
+You can find some interactive examples for [reports](http://www.hoberlab.com/wp-content/uploads/2017/11/random.html) and [scatter clouds](http://www.hoberlab.com/wp-content/uploads/2017/11/cluster.html)
+
+![An example of browsable scatter cloud](http://www.hoberlab.com/wp-content/uploads/2017/11/bokeh_plot.png)
+
+![An example of browsable time series](http://www.hoberlab.com/wp-content/uploads/2017/11/bokeh_plot-1.png)
+
 The magic of repplot can be appreciated in the repo by running either:
 
 * [The showroom Notebook](https://github.com/drublackberry/repplot/blob/master/notebook/showroom.ipynb)
 * A Flask server included in `bin/run_plot_server` that allows to request different data and plot parameters.
+
 
 ### Running the flask server
 
