@@ -5,7 +5,28 @@ Author: Andreu Mora (andreu.mora@gmail.com)
 ## What is it
 
 Repplot is a library for plotting scientific reports in an interactive way. It is based on the pandas DataFrame data 
-structures and runs over matplotlib (static) or Bokeh (interactive)
+structures and runs over matplotlib (static) or Bokeh (interactive).
+
+It all started based on this [post](http://www.hoberlab.com/2017/11/16/visualizing-things-with-bokeh/).
+
+The magic of repplot can be appreciated in the repo by running either:
+
+* [The showroom Notebook](https://github.com/drublackberry/repplot/blob/master/notebook/showroom.ipynb)
+* A Flask server included in `bin/run_plot_server` that allows to request different data and plot parameters.
+
+### Running the flask server
+
+Just type 
+
+`> python bin/run_plot_server.py -p 5000`
+
+Or any other port you wish to use, and then direct yourself to either:
+
+* `HOST/delta_report` or customize the deltas with `HOST/delta_report?vs=ham`
+* `HOST/error_report`
+* `HOST/scatter` or customize the x, y, color and size of the scatter plot `HOST/scatter?s=ham`
+
+
 
 ## Dependencies
 
